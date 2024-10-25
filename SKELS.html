@@ -1,0 +1,247 @@
+<html>
+<head>
+    <title>My Skills</title>
+
+
+
+
+
+
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <style>
+                body {
+                    margin: 0;
+                    font-family: Arial, sans-serif;
+                    background-color: #1a1a1a;
+                }
+                .navbar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px 50px;
+                    background-color: #1a1a1a;
+                }
+                .navbar .logo {
+                    color: #ffffff;
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                .navbar .logo span {
+                    color: #00bcd4;
+                }
+                .navbar ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                }
+                .navbar ul li {
+                    margin-left: 20px;
+                }
+                .navbar ul li a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+                .navbar ul li a.active {
+                    color: #00bcd4;
+                }
+            </style>
+
+            <div class="navbar">
+                <div class="logo">Portfolio<span>.</span></div>
+                <ul>
+                    <li><a href="profile.html">Home</a></li>
+                    <li><a href="About.html" class="active">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Contact.htmls">Contact</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #00e0e0;
+            margin-bottom: 50px;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .skills-section {
+            width: 45%;
+        }
+        .skills-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .skill {
+            margin-bottom: 20px;
+        }
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .progress-bar {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 10px;
+        }
+        .progress {
+            height: 10px;
+            background-color: #00e0e0;
+        }
+        .circle-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .circle {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        .circle .inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .circle .inner span {
+            display: block;
+            font-size: 18px;
+        }
+        .circle .inner p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .circle .outer {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 10px solid #333;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .circle[data-percent="90"] .outer {
+            border-top-color: #00e0e0;
+            border-right-color: #00e0e0;
+            border-bottom-color: #00e0e0;
+        }
+        .circle[data-percent="80"] .outer {
+            border-top-color: #00e0e0;
+            border-right-color: #00e0e0;
+        }
+        .circle[data-percent="70"] .outer {
+            border-top-color: #00e0e0;
+            border-right-color: #00e0e0;
+            border-bottom-color: #00e0e0;
+            border-left-color: #00e0e0;
+        }
+        .circle[data-percent="55"] .outer {
+            border-top-color: #00e0e0;
+            border-right-color: #00e0e0;
+            border-bottom-color: #00e0e0;
+            border-left-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>TECHNICAL AND PROFESSIONAL<br>My Skills</h1>
+    <div class="skills-container">
+        <div class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skill">
+                <div class="skill-name">
+                    <span>HTML</span>
+                    <span>72%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 72%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <span>Figma</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <span>JavaScript</span>
+                    <span>80%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <span>CSS</span>
+                    <span>62%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 62%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skills-section">
+            <h2>Professional Skills</h2>
+            <div class="circle-container">
+                <div class="circle" data-percent="90">
+                    <div class="outer"></div>
+                    <div class="inner">
+                        <span>90%</span>
+                        <p>Team Work</p>
+                    </div>
+                </div>
+                <div class="circle" data-percent="80">
+                    <div class="outer"></div>
+                    <div class="inner">
+                        <span>80%</span>
+                        <p>Creativity</p>
+                    </div>
+                </div>
+                <div class="circle" data-percent="55">
+                    <div class="outer"></div>
+                    <div class="inner">
+                        <span>55%</span>
+                        <p>Project Management</p>
+                    </div>
+                </div>
+                <div class="circle" data-percent="70">
+                    <div class="outer"></div>
+                    <div class="inner">
+                        <span>70%</span>
+                        <p>Communication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

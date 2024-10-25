@@ -1,0 +1,145 @@
+<html>
+ <head>
+  <title>
+   Music Player
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  
+  
+  
+  <style>
+   body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, #2c3e50, #34495e);
+            font-family: Arial, sans-serif;
+        }
+        .player {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .player .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .player .header i {
+            font-size: 18px;
+        }
+        .player .header .title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .player .cover {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .player .info {
+            margin-bottom: 20px;
+        }
+        .player .info .song {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .player .info .singer {
+            font-size: 14px;
+            color: #888;
+        }
+        .player .progress {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .player .progress .time {
+            font-size: 12px;
+            color: #888;
+        }
+        .player .progress-bar {
+            width: 100%;
+            height: 5px;
+            background: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        .player .progress-bar .progress {
+            width: 50%;
+            height: 100%;
+            background: #3498db;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .player .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .player .controls i {
+            font-size: 24px;
+            cursor: pointer;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="player">
+   <div class="header">
+    <i class="fas fa-chevron-down">
+    </i>
+    <div class="title">
+     Now Playing
+    </div>
+    <i class="fas fa-ellipsis-h">
+    </i>
+   </div>
+   <img alt="Album cover showing a mountain range during sunset" class="cover" height="200" src="https://storage.googleapis.com/a1aa/image/UfRNeo94HblffQ56ee22FPqQhrnyYnIWeisW6zOTCfedWSiUnA.jpg" width="300"/>
+   <div class="info">
+    <div class="song">
+     First Song
+    </div>
+    <div class="singer">
+     First Singer
+    </div>
+   </div>
+   <div class="progress">
+    <div class="time">
+     01:45
+    </div>
+    <div class="progress-bar">
+     <div class="progress">
+     </div>
+    </div>
+    <div class="time">
+     03:45
+    </div>
+   </div>
+   <div class="controls">
+    <i class="fas fa-backward">
+    </i>
+    <i class="fas fa-play-circle">
+    </i>
+    <i class="fas fa-forward">
+    </i>
+    <i class="fas fa-random">
+    </i>
+    <i class="fas fa-list">
+    </i>
+   </div>
+  </div>
+
+
+
+
+  
+ </body>
+</html>
